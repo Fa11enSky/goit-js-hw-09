@@ -62,7 +62,6 @@ function onClickBtn() {
     if (timeLeft <= 0) {
       clearInterval(interval);
       dateInput.disabled = false;
-      refs.btnEl.disabled = false;
     }
   }, 1000);
 }
