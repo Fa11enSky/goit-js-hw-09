@@ -12,7 +12,8 @@ formEl.addEventListener('submit', submitForm);
 // callback submit
 function submitForm(ev) {
   ev.preventDefault();
-  if (refs.amount.value < 0 || refs.delay.value < 0 || refs.step.value < 0) {
+  // Тут добавив перевірку на те що значення не будуть від'ємними
+  if (refs.amount.value < 0 || refs.delay.value < 0 ) {
     Notiflix.Notify.failure('The value cannot be negative')
     return
   }
