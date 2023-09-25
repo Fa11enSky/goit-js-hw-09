@@ -12,7 +12,7 @@ formEl.addEventListener('submit', submitForm);
 // callback submit
 function submitForm(ev) {
   ev.preventDefault();
-  if (refs.amount.value < 0 || refs.delay.value < 0 || refs.step < 0) {
+  if (refs.amount.value < 0 || refs.delay.value < 0 || refs.step.value < 0) {
     Notiflix.Notify.failure('The value cannot be negative')
     return
   }
